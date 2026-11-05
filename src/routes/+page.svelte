@@ -84,6 +84,6 @@
 	<div class="mt-4 justify-end text-sm text-right flex gap-x-2">
 		Made by Kang.
 		<a href="mailto:kang.xiang@wfusm.edu"><Mail /></a>
-		<a href="https://github.com/kangruixiang/CRRTcalc"><Computer /></a>
+		<a href="https://github.com/kangruixiang/CRRTcalculator"><Computer /></a>
 	</div>
 </div>
