@@ -45,17 +45,17 @@
 )}
 	<fieldset>
 		<legend class="fieldset-legend">{title} <span class="font-normal">{description}</span></legend>
-		<div class="grid grid-cols-12 gap-golden-lg items-center">
+		<div class="grid grid-cols-12 gap-golden-md md:gap-golden-lg items-center">
 			<input
 				bind:value={parameters[key]}
 				type="range"
 				{min}
 				{max}
 				{step}
-				class="range w-full range-primary col-span-7 md:col-span-9"
+				class="range w-full range-primary col-span-12 md:col-span-9"
 			/>
-			<input type="number" bind:value={parameters[key]} class="input col-span-3 md:col-span-2" />
-			<div class="col-span-2 md:col-span-1">{unit}</div>
+			<input type="number" bind:value={parameters[key]} class="input col-span-9 md:col-span-2" />
+			<div class="col-span-3 md:col-span-1">{unit}</div>
 		</div>
 	</fieldset>
 {/snippet}
@@ -116,8 +116,8 @@
 			1,
 			'hr(s)'
 		)}
-		{@render snippetInput('CRRT Na', '', parameters, 'CRRTNa', 100, 160, 1, '')}
-		{@render snippetInput('Target Na', '', parameters, 'targetNa', 100, 160, 1, '')}
+		{@render snippetInput('CRRT Na', '', parameters, 'CRRTNa', 100, 160, 1, 'mmol/L')}
+		{@render snippetInput('Target Na', '', parameters, 'targetNa', 100, 160, 1, 'mmol/L')}
 	</div>
 
 	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-golden-md card-body">
